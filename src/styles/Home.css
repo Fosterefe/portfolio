@@ -1,0 +1,159 @@
+.Home {
+    height: 110%;
+    background-color: #281E1E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec-1 {
+    height: 70%;
+    padding: 7% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px; 
+    background: rgba(196, 196, 196, 0.07);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.sec-1 h3 {
+    color: #9E3535;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.sec-1 h1 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.sec-1 p {
+    color: #FFFEFE;
+    font-size: .95rem;
+    font-weight: 300;
+}
+
+.sec-1 a {
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+    color: #FDF9F9;
+    border: 1.5px solid #CA2222;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all .2s ease-in-out;
+}
+
+.sec-1 a:hover {
+    transform: scale(1.07);
+}
+
+.sec-2 {
+    height: 20%;
+    border-radius: 7px;
+    background: rgba(196, 196, 196, 0.07);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.linkedLin {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linkedLin svg{
+    font-size: 4rem;
+    color: #3462D8;
+}
+
+
+.github {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.github svg {
+    font-size: 4rem;
+    background-color: #3462D8;
+    border-radius: 80px;
+    transition: all .2s ease-in;
+}
+
+.github a:hover {
+    transform: scale(1.1);
+}
+
+.linkedLin a:hover {
+    transform: scale(1.1);
+}
+
+.socials a {
+    text-decoration: none;
+    color: #CFCFCF;
+}
+
+.socials a:hover {
+    color: #9E3535;
+}
+
+@media screen and (min-width: 1400px) {
+    .sec-1 h3 {
+        font-size: 1.5rem;
+    }  
+
+    .sec-1 p {
+        font-size: 1.2rem;
+    }
+
+    .sec-1 h1 {
+        font-size: 5rem;
+    }
+
+    .socials {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec-1 {
+        align-items: center;
+    }
+
+    .sec-1 a {
+        width: 50%;
+    }
+}

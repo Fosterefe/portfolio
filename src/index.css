@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #281E1E;
+}
+
+#root {
+    height: 100%;
+}
+
+.Menu {
+    background-color: #281E1E;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .Menu {
+        height: 15vh;
+    }
+ 
+}
