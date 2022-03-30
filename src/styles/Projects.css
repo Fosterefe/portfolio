@@ -1,14 +1,26 @@
 .p {
-    height: 80vh;
+    height: 70vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.p-wrapper a img {
-    transition: all .2s ease;
+.p-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+    margin-top: 10%;
 }
 
-.p-wrapper a img:hover {
-    transform: scale(1.04);
+@media screen and (max-width: 500px) {
+    .p {
+        height: auto;
+    }
+
+    .p-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }    
 }

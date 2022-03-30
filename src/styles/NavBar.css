@@ -15,14 +15,23 @@
 }
 
 .nav-icon {
-    width: 90px;
-    height: 90px;
-    border-radius: 100%;
-    background-color: #C74B4B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: rgb(228, 228, 228);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+
+.nav-icon p {
+    text-align: center;
+}
+
+.nav-icon:hover {
+    transform: scale(1.03);
+    color: rgba(217, 87, 87, 1);
 }
 
 .nav-icon a {
@@ -87,25 +96,29 @@ nav {
         height: 100%;
     }
 
-    .nav-icon {
-        width: 65px;
-        height: 65px; 
+    .nav-icon h1 {
+        font-size: 2rem;
+    }
+    .nav-icon p {
+        font-size: 1rem;
     }
 
     .naav {  
         display: none;
-        transition: all .2s ease-in;
+        transition: all .6s ease-in;
     }
 
     .naav.active {
+        position: absolute;
         display: flex;
         width: 140%;
-        height: 40%;
+        height: 80%;
         background-color: black;
         border-radius: 6px; 
         transition: all .2s ease-in;
         position: absolute;
-        bottom: -20%;
+        bottom: -90%;
+        border: 1.2px solid #CA2222;
     }
 
     .links-container {

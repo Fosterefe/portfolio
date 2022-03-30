@@ -12,9 +12,9 @@ function Home() {
             <h3>- I am</h3>
             <h1>Alexander Borja</h1>
             <h3>Web developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Imperdiet nulla malesuada
-                pellentesque elit eget gravida.</p>
+            <p>I'm web developer that is passionate about building meaningful and rich experiences for the web.
+                I'm also comftable with the latest technologies and tools. 
+            </p>
             <Link to='/about'>About Me</Link>
         </section>
         <section className='sec-2'>

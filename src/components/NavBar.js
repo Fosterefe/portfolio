@@ -7,28 +7,32 @@ import { useRef } from 'react'
 function NavBar() {
 
     const nav = useRef(null)
+    const links = useRef(null)
 
-    const openMenu = () => {
+    const openMenu = (e) => {
         nav.current.classList.toggle('active')
+        if(nav.current.classList === 'links') {
+            nav.current.target.classList.remove('active')
+        }
     }
 
   return (
 <div className='nav'>
     <div className='hero-nav'>
-        <div className='nav-icon'>
-            <Link to='/'>AB</Link>
-        </div>
+        <Link to='/' className='nav-icon'>
+            <h1>Alexander Borja</h1>
+        </Link>
     </div>
     <nav ref={nav} className='naav'>
         <ul className='links-container'>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/' className='links'>Home</Link>
             </li>
             <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about' className='links'>About</Link>
             </li>
             <li>
-                <Link to='/projects'>Projects</Link>
+                <Link to='/projects' className='links'>Projects</Link>
             </li>
         </ul>
     </nav>
